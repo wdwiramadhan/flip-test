@@ -1,0 +1,22 @@
+timestamp,name,type,amount,status,description
+1704067200,John Doe,CREDIT,1000000,SUCCESS,Initial deposit
+1704153600,Jane Smith,DEBIT,250000,SUCCESS,Grocery shopping
+1704240000,Mike Johnson,CREDIT,500000,SUCCESS,Salary payment
+1704326400,Sarah Williams,DEBIT,150000,SUCCESS,Restaurant bill
+1704412800,Bob Brown,CREDIT,300000,SUCCESS,Freelance work
+1704499200,Alice Davis,DEBIT,100000,FAILED,Failed ATM withdrawal
+1704585600,Charlie Wilson,CREDIT,200000,PENDING,Pending transfer
+1704672000,David Lee,DEBIT,75000,SUCCESS,Online shopping
+1704758400,Emma Martinez,CREDIT,450000,SUCCESS,Investment return
+1704844800,Frank Garcia,DEBIT,80000,SUCCESS,Utility bills
+1704931200,Grace Rodriguez,CREDIT,600000,SUCCESS,Bonus payment
+1705017600,Henry Anderson,DEBIT,120000,FAILED,Failed payment
+1705104000,Ivy Thomas,CREDIT,350000,SUCCESS,Consulting fee
+1705190400,Jack Taylor,DEBIT,90000,SUCCESS,Gas station
+1705276800,Kelly Moore,CREDIT,800000,SUCCESS,Business income
+1705363200,Leo Jackson,DEBIT,200000,PENDING,Pending purchase
+1705449600,Mia White,CREDIT,250000,SUCCESS,Refund
+1705536000,Noah Harris,DEBIT,110000,SUCCESS,Phone bill
+1705622400,Olivia Martin,CREDIT,150000,SUCCESS,Gift received
+1705708800,Peter Thompson,DEBIT,95000,SUCCESS,Subscription fees
+
