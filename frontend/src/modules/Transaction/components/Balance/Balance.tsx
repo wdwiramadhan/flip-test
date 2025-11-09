@@ -12,7 +12,7 @@ const Balance = ({ balance }: BalanceProps) => {
       <p className={styles.label}>Current Balance</p>
       <div
         className={cn(styles.balance, {
-          [styles.balance_negative]: balance < 0
+          [styles.balance_negative]: balance < 0,
         })}
       >
         {formatCurrency(balance)}

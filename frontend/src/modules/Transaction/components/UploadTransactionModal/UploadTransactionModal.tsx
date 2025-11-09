@@ -2,6 +2,7 @@ import cn from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import { IconDocument, IconExclamationTriangle } from '@/components/icons';
 import Modal from '@/components/Modal';
+import { getFileSize } from '../../utils/helpers';
 import styles from './UploadTransactionModal.module.css';
 
 type UploadTransactionModalProps = {
@@ -27,6 +28,7 @@ const UploadTransactionModal = ({
       setSelectedFile(null);
       setError(null);
       setIsDragOver(false);
+
       if (fileInputRef.current) {
         fileInputRef.current.value = '';
       }
@@ -42,6 +44,7 @@ const UploadTransactionModal = ({
       setError('Please upload a CSV file');
       return false;
     }
+
     if (file.size > 10 * 1024 * 1024) {
       setError('File size must be less than 10MB');
       return false;
@@ -93,12 +96,6 @@ const UploadTransactionModal = ({
     onClose();
   };
 
-  const formatFileSize = (bytes: number): string => {
-    if (bytes < 1024) return `${bytes} B`;
-    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(2)} KB`;
-    return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
-  };
-
   return (
     <Modal isOpen={isOpen} onClose={handleClose} title="Upload Transaction">
       <div className={styles.upload_container}>
@@ -144,7 +141,7 @@ const UploadTransactionModal = ({
             </div>
             <div className={styles.file_details}>
               <p className={styles.file_name}>{selectedFile.name}</p>
-              <p className={styles.file_size}>{formatFileSize(selectedFile.size)}</p>
+              <p className={styles.file_size}>{getFileSize(selectedFile.size)}</p>
             </div>
             <button
               type="button"

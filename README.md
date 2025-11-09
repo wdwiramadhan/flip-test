@@ -81,7 +81,7 @@ frontend/
 │   └── styles/              # Global styles
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
